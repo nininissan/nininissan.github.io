@@ -20,17 +20,19 @@ a
   font-family: Plaak;
   font-weight: 900;
   word-wrap: break-word;
+  letter-spacing: 1.20px;
 }
 
 #slideshow 
 {
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center center;
+  position: relative;
   width: 100vw!important;
   height: 100vh!important;
-  left: -7px; 
-  top: -7px; 
-  background-size: cover;
-  position: relative;
-  background-image: url('../images/bkgrd1.png');
+  left: -8px; 
+  top: -8px; 
 }
 
 .overlay{
@@ -46,12 +48,11 @@ a
   padding: 20px;
   left: 20px; 
   top: 25px;   
-  position: absolute; 
+  position: fixed; 
   justify-content: center; 
   align-items: center; 
   gap: 10px; 
   display: inline-flex;
-  letter-spacing: 1.20px;
 }
 
 .center-text
@@ -65,13 +66,12 @@ a
 {
   padding: 20px; 
   right: 20px; 
-  position: absolute; 
+  position: fixed; 
   justify-content: center; 
   align-items: center; 
   gap: 10px; 
   display: inline-flex;
   text-align: right; 
-  letter-spacing: 1.20px;
 }
 
 .email-me-text
@@ -79,11 +79,47 @@ a
   padding: 20px; 
   right: 20px; 
   bottom: 20px; 
-  position: absolute; 
+  position: fixed; 
   justify-content: center; 
   align-items: center; 
   gap: 10px; 
   display: inline-flex;
   text-align: right; 
-  letter-spacing: 1.20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  
+  .rat-text
+  {
+    top: 10px;  
+    left: revert; 
+    display: revert; 
+    position: relative;
+    text-align: center;
+  }
+
+  .center-text
+  { 
+    position: sticky;
+  }
+
+  .call-me-text
+  {
+    padding: 20px; 
+    left: 20px; 
+    right: revert;
+    bottom: 20px;
+    text-align: left; 
+    position: fixed; 
+  }
+
+  .email-me-text
+  {
+    padding: 20px; 
+    right: 20px; 
+    bottom: 20px; 
+    position: fixed; 
+  }
+
 }

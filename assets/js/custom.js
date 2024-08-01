@@ -10,7 +10,7 @@ $(document).ready(function() {
   ];
   window.onload = function () {
     var i = 1;
-    setInterval(changeImage, 1000);
+    setInterval(changeImage, 1300);
     function changeImage() {   
       if (!images[i]) i = 0;
       slideshow.css('background-image', 'url(' + images[i] + ')');
