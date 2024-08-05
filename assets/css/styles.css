@@ -57,12 +57,12 @@ a
 
 .center-text
 { 
-  position: relative;
+  position: sticky;
   top: 50%;
   text-align: center;
 }
 
-.call-me-text
+.book-me-text
 {
   padding: 20px; 
   right: 20px; 
@@ -89,6 +89,11 @@ a
 
 
 @media only screen and (max-width: 600px) {
+
+  .plaak
+  {
+    font-size: 15px;
+  }
   
   .rat-text
   {
@@ -104,7 +109,7 @@ a
     position: sticky;
   }
 
-  .call-me-text
+  .book-me-text
   {
     padding: 20px; 
     left: 20px; 
