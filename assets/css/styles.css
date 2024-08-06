@@ -16,7 +16,7 @@ a
 .plaak
 {
   color: white;
-  font-size: 20px;
+  font-size: 25px;
   font-family: Plaak;
   font-weight: 900;
   word-wrap: break-word;
@@ -70,7 +70,6 @@ a
   justify-content: center; 
   align-items: center; 
   gap: 10px; 
-  display: inline-flex;
   text-align: right; 
 }
 
@@ -83,7 +82,6 @@ a
   justify-content: center; 
   align-items: center; 
   gap: 10px; 
-  display: inline-flex;
   text-align: right; 
 }
 
@@ -93,6 +91,11 @@ a
   .plaak
   {
     font-size: 15px;
+  }
+
+  #slideshow 
+  {
+    background-image: url(../images/mobile/01.png);
   }
   
   .rat-text
