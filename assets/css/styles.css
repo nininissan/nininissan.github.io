@@ -58,7 +58,7 @@ a
 
 .center-text
 { 
-  position: relative;
+  position: sticky;
   top: 50%;
   text-align: center;
 }
@@ -104,13 +104,8 @@ a
     top: 10px;  
     left: revert; 
     display: revert; 
-    position: relative;
-    text-align: center;
-  }
-
-  .center-text
-  { 
     position: sticky;
+    text-align: center;
   }
 
   .book-me-text
@@ -121,15 +116,17 @@ a
     top: 90%;
     text-align: left; 
     display: inline-flex;
+    position: sticky;
   }
 
   .email-me-text
   {
     padding: 20px; 
-    right: 20px; 
+    right: revert;
+    left: 60%;
     top: 90%;
-    bottom: revert;
     display: inline-flex;
+    position: sticky;
   }
 
 }
