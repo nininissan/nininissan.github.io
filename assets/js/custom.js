@@ -2,6 +2,7 @@ $(document).ready(function() {
   var slideshow = $('#slideshow');
   var preload = [];
   if (window.innerWidth < 600){
+    $("#overlay").blur();
     preload = [
       './assets/images/mobile/01.png',
       './assets/images/mobile/02.png',
@@ -77,7 +78,7 @@ $(document).ready(function() {
         images[i].src = preload[i];
     }
     var j = 1;
-    setInterval(changeImage, 2700);
+    setInterval(changeImage, 3000);
     function changeImage() {   
       if (!images[j]) j = 0;
       slideshow.css('background-image', 'url(' + images[j].src + ')');
