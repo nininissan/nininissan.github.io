@@ -25,6 +25,7 @@ a
 
 #slideshow 
 {
+  background-image: url(../images/01.png);
   background-size: cover;
   background-repeat:no-repeat;
   background-position: center center;
@@ -57,7 +58,7 @@ a
 
 .center-text
 { 
-  position: sticky;
+  position: relative;
   top: 50%;
   text-align: center;
 }
