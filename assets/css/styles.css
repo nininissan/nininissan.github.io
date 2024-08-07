@@ -16,7 +16,7 @@ a
 .plaak
 {
   color: white;
-  font-size: 25px;
+  font-size: 22px;
   font-family: Plaak;
   font-weight: 900;
   word-wrap: break-word;
@@ -48,7 +48,7 @@ a
 {
   padding: 20px;
   left: 20px; 
-  top: 30px;   
+  top: 27px;   
   position: fixed; 
   justify-content: center; 
   align-items: center; 
@@ -59,7 +59,7 @@ a
 .center-text
 { 
   position: sticky;
-  top: 45%;
+  top: 50%;
   text-align: center;
 }
 
@@ -102,32 +102,30 @@ a
   
   .rat-text
   {
+    padding: 10px;
     top: 10px;  
     left: revert; 
     display: revert; 
-    position: sticky;
+    position: relative;
     text-align: center;
   }
 
   .book-me-text
   {
-    padding: 20px; 
+    padding: 10px; 
     left: 20px; 
     right: revert;
-    top: 90%;
+    bottom: 20px;
     text-align: left; 
-    display: inline-flex;
-    position: sticky;
+    position: fixed; 
   }
 
   .email-me-text
   {
-    padding: 20px; 
-    right: revert;
-    left: 60%;
-    top: 90%;
-    display: inline-flex;
-    position: sticky;
+    padding: 10px; 
+    right: 20px; 
+    bottom: 20px; 
+    position: fixed; 
   }
 
 }
