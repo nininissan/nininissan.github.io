@@ -1,4 +1,9 @@
 $(document).ready(function() {
+  initialize();
+});
+
+function initialize()
+{
   var slideshow = $('#slideshow');
   var preload = [];
   if (window.innerWidth < 600){
@@ -70,8 +75,8 @@ $(document).ready(function() {
       './assets/images/24.png'
     ];
   }
-  window.onload = function () {
-    var images = [];
+
+  var images = [];
     for (i = 0; i < preload.length; i++) {
         images[i] = new Image();
         images[i].src = preload[i];
@@ -83,5 +88,4 @@ $(document).ready(function() {
       slideshow.css('background-image', 'url(' + images[j].src + ')');
       j++;
     }
-  }
-});
+}
