@@ -27,13 +27,14 @@ a
 {
   background-image: url(../images/01.png);
   background-size: cover;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   background-position: center center;
-  position: relative;
-  width: 100vw!important;
-  height: 100vh!important;
-  left: -8px; 
-  top: -8px; 
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  transition: background-image 0.5s ease-in-out;
 }
 
 .overlay{
@@ -44,10 +45,35 @@ a
   position: absolute; 
 }
 
-.rat-text
+.top-one-text
 {
   padding: 20px;
   left: 20px; 
+  top: 27px;   
+  position: fixed; 
+  justify-content: center; 
+  align-items: center; 
+  gap: 10px; 
+  display: inline-flex;
+}
+
+.top-two-text
+{
+  padding: 20px;
+  left: 50%;
+  top: 27px;   
+  position: relative;
+  transform: translateX(-50%);
+  justify-content: center; 
+  align-items: center; 
+  gap: 10px; 
+  display: inline-flex;
+}
+
+.top-three-text
+{
+  padding: 20px;
+  right: 20px; 
   top: 27px;   
   position: fixed; 
   justify-content: center; 
@@ -78,6 +104,17 @@ a
 .email-me-text
 {
   padding: 20px; 
+  bottom: 20px; 
+  position: fixed; 
+  justify-content: center; 
+  align-items: center; 
+  gap: 10px; 
+  text-align: right; 
+}
+
+.view-cv-text
+{
+  padding: 20px; 
   right: 20px; 
   bottom: 20px; 
   position: fixed; 
@@ -88,11 +125,11 @@ a
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1400px) {
 
   .plaak
   {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   #slideshow 
@@ -110,6 +147,38 @@ a
     text-align: center;
   }
 
+  .top-one-text
+  {
+    padding: 10px;
+    top: 10px;  
+    left: revert; 
+    display: revert; 
+    position: relative;
+    text-align: center;
+  }
+
+  .top-two-text
+  {
+    padding: 10px;
+    top: 15px;  
+    left: revert; 
+    display: revert; 
+    position: relative;
+    text-align: center;
+    transform: revert;
+  }
+
+  .top-three-text
+  {
+    padding: 10px;
+    top: 20px;  
+    left: revert; 
+    right: revert;
+    display: revert; 
+    position: relative;
+    text-align: center;
+  }
+
   .book-me-text
   {
     padding: 10px; 
@@ -122,10 +191,18 @@ a
 
   .email-me-text
   {
+    left:10px;
+    padding: 10px;  
+    bottom: 20px; 
+    position: fixed; 
+  }
+
+  .view-cv-text
+  {
     padding: 10px; 
     right: 20px; 
     bottom: 20px; 
-    position: fixed; 
+    position: fixed;
   }
 
 }
